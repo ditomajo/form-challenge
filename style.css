@@ -1,0 +1,189 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	background: #03372e;
+}
+
+.form-heading {
+	max-width: 450px;
+	background: #4abfab;
+	display: block;
+	height: 100px;
+	margin-bottom: 0;
+	margin: auto;
+	border-radius: 10px 10px 0 0;
+	color: white;
+	margin-top: 40px;
+	padding: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+	width: 80%;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	padding-left: 5px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+  margin-bottom: 4px;
+	border: none;
+  border-bottom: 2px solid #4abfab;
+  transition: all 300ms ease-in;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  border-bottom: 2px solid #832e1a;
+  outline: none;
+}
+
+.form-body {
+	max-width: 450px;
+	margin: 0 auto;
+	background: #fefefe;
+	padding: 10px;
+
+	margin-top: 0;
+  border-radius: 0 0 10px 10px;
+box-shadow:
+  0 0.3px 0.3px rgba(0, 0, 0, 0.057),
+  0 0.8px 0.9px rgba(0, 0, 0, 0.138),
+  0 1.6px 1.8px rgba(0, 0, 0, 0.237),
+  0 3.3px 3.7px rgba(0, 0, 0, 0.343),
+  0 9px 10px rgba(0, 0, 0, 0.31)
+;
+}
+
+.form-heading h1 {
+	text-align: center;
+	font-size: 2.5rem;
+	vertical-align: middle;
+	margin: 0 0 0 0;
+	color: azure;
+}
+
+.form-heading p {
+	margin: 0;
+	text-align: center;
+}
+
+.form-body label {
+	display: block;
+	margin-top: 10px;
+	font-weight: 700px;
+	margin-left: 10%;
+}
+
+.form-body label:first-of-type {
+	margin-top: 10px;
+}
+
+.button {
+	display: block;
+
+	width: 60%;
+	margin: auto;
+	margin-top: 15px;
+	background: #0a8470;
+	border: none;
+	height: 45px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	color: white;
+	cursor: pointer;
+  margin-bottom: 15px;
+  
+  border: 2px solid #0a8470;
+  transition: all 300ms ease-in;
+}
+
+.button:hover{
+background: white;
+color: #0a8470;
+}
+
+
+.button:focus{
+outline: none;
+border:none;
+border: 2px solid #0a8470;
+}
+a {
+	color: #832e1a;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.footer-form{
+text-align: center;
+margin-bottom: 5px;
+
+}
+
+.footer-form p{
+margin: 8px;
+}
+
+a:last-of-type {
+	color: #4abfab;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.account{ 
+text-align: center;
+color: white;
+font-weight: bold;
+margin: 12px;
+}
+
+.form-control{
+position: relative;
+padding-bottom: 0px;
+margin-bottom: 0;
+}
+
+
+.form-control.success input {
+  border-color: green;
+}
+
+.form-control.error input {
+  border-color:red;
+}
+
+
+.form-control small{
+color: red;
+margin-left:10%;
+visibility: hidden;
+
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+@media   (max-width: 768px){
+.form-body {
+	max-width: 98%;
+
+}
+.form-heading{
+max-width: 98%;
+	margin-top: 10px;
+}
+
+
+.account{ 
+
+margin: 4px;
+}
+
+}
